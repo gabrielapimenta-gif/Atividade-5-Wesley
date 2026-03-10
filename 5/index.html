@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="formCadastro">
+            <table>
+                <tr>
+                    <td><label for="login">Login</label></td>
+                    <td><input type="text" id="login" name="login"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="nascimento">Data de nascimento:</label></td>
+                    <td><input type="text" id="nascimento" name="nascimento"></td>
+                </tr>
+                <tr>
+                    <td><label for="senha">Senha:</label></td>
+                    <td><input type="password" id="senha" name="senha"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmar">Confirmar senha:</label></td>
+                    <td><input type="password" id="confirmar" name="confirmar"></td>
+                </tr>
+                <tr>
+                    <td><label for="sexo">Sexo:</label></td>
+                    <td>
+                        <select id="sexo" name="sexo">
+                            <option value="">Selecione</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cidade">Cidade:</label></td>
+                    <td><input type="text" id="cidade" name="cidade"></td>
+                </tr>
+                <tr>
+                    <td><label for="homepage">Home-Page:</label></td>
+                    <td><input type="url" id="homepage" name="homepage" value="http://"></td>
+                </tr>
+                <tr>
+                    <td>Interesses:</td>
+                    <td class="interesses">
+                        <input type="checkbox" id="musica" name="interesse" value="musica"> <label for="musica">Música</label>
+                        <input type="checkbox" id="esporte" name="interesse" value="esporte"> <label for="esporte">Esporte</label>
+                        <input type="checkbox" id="moda" name="interesse" value="moda"> <label for="moda">Moda</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="botoes">
+                        <button type="reset" class="btn-retro">Limpar</button>
+                        <button type="submit" class="btn-retro">Cadastrar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

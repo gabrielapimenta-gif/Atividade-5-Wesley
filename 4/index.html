@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo Digital</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+    <section id="page-login" class="auth-container">
+        <div class="card">
+            <h2>Login</h2>
+            <form id="form-login">
+                <input type="email" id="login-email" placeholder="E-mail" required>
+                <input type="password" id="login-senha" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem conta? <a href="#" onclick="showPage('page-cadastro')">Cadastre-se</a></p>
+        </div>
+    </section>
+
+    <section id="page-cadastro" class="auth-container hidden">
+        <div class="card">
+            <h2>Cadastro</h2>
+            <form id="form-cadastro">
+                <input type="text" id="cad-nome" placeholder="Nome Completo" required>
+                <input type="date" id="cad-nasc" title="Data de Nascimento" required>
+                <input type="email" id="cad-email" placeholder="E-mail" required>
+                <input type="password" id="cad-senha" placeholder="Senha" required>
+                <input type="password" id="cad-confirma" placeholder="Confirmar Senha" required>
+                <button type="submit">Cadastrar e Ver Currículo</button>
+            </form>
+            <p>Já possui conta? <a href="#" onclick="showPage('page-login')">Fazer Login</a></p>
+        </div>
+    </section>
+
+    <section id="page-curriculo" class="hidden">
+        <nav>
+            <a href="#" onclick="showPage('page-login')">Sair / Login</a>
+        </nav>
+        <main class="resume-card">
+            <header>
+                <img src="assets/image.png" alt="Foto de Perfil" id="res-foto">
+                <h1 id="res-nome">João Silva</h1>
+                <p id="res-info">Nascido em: <span id="res-data">01/01/1990</span></p>
+            </header>
+            
+            <section class="details">
+                <h3>Profissão</h3>
+                <p id="res-profissao">Desenvolvedor Full Stack</p>
+                
+                <h3>Escolaridade</h3>
+                <p id="res-escolaridade">Bacharel em Ciência da Computação</p>
+                
+                <h3>Experiências Profissionais</h3>
+                <ol id="res-experiencias">
+                    <li>Sênior Software Engineer na TechCorp (2020 - Atual)</li>
+                    <li>Web Developer na StartupX (2018 - 2020)</li>
+                    <li>Estagiário de TI na Prefeitura (2016 - 2018)</li>
+                </ol>
+            </section>
+        </main>
+    </section>
+
+    <script src="assets/funcionalidade.js"></script>
+</body>
+</html>
